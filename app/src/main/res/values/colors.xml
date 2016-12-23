@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="menu_bg">#15ffffff</color>
+    <color name="grey">#a1a1a1</color>
+    <color name="white">#ffffff</color>
+    <color name="bg">#294f6f</color>
+    <color name="list_divider">#888787</color>
+    <color name="menu_selected">#50ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+
+    <color name="theme_color_pressed">#005b7f</color>
+</resources>

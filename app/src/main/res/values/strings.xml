@@ -1,0 +1,16 @@
+<resources>
+    <string name="settings">设置</string>
+    <string name="app_name">My Application</string>
+    <string name="version_detect_info">已是最新版本</string>
+    <string name="action_settings">Settings</string>
+    <string name="version_num_hint">当前版本  </string>
+    <string name="getting">正在获取</string>
+    <string name="device_mac_hint">设备地址  </string>
+    <string name="device_num_hint">设备编号  </string>
+    <string name="info_getting">正在获取亲情相册公众号二维码…</string>
+    <string name="no_access">目前没有微信号接入</string>
+    <string name="sound_setting">声音设置  </string>
+    <string name="reminder_sound_setting">提示音  </string>
+    <string name="display_setting">显示设置  </string>
+    <string name="display_auto_setting">调节屏幕亮度  </string>
+    </resources>

@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="setting_content_heigh">90dp</dimen>
+    <dimen name="settings_divider_weight">1.3dp</dimen>
+    <dimen name="settings_menu_icon_list_hight">100dp</dimen>
+    <dimen name="settings_menu_list_hight">100dp</dimen>
+    <dimen name="content_textsize">34sp</dimen>
+    <dimen name="settings_divider_height">1.3dp</dimen>
+    <dimen name="huge_font_size">38sp</dimen>
+    <dimen name="setting_big_margin">90dp</dimen>
+    <dimen name="textsize_large">32sp</dimen>
+    <dimen name="setting_qrcode_heigh">200dp</dimen>
+    <dimen name="setting_qrcode_width">200dp</dimen>
+    <dimen name="setting_margin">20dp</dimen>
+    <dimen name="setting_gettingLayout_width">230dp</dimen>
+    <dimen name="setting_gettingLayout_height">230dp</dimen>
+    <dimen name="large_font_size">27sp</dimen>
+
+    <dimen name="fragment_margin">40dp</dimen>
+
+    <dimen name="textsize_medium">24sp</dimen>
+    <dimen name="middle_font_size">22sp</dimen>
+
+
+</resources>

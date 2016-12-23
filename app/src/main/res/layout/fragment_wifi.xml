@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- 声音设置 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="@string/sound_setting"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/middle_font_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/fragment_margin"
+            android:background="@color/grey"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_margin"
+        android:layout_marginRight="@dimen/fragment_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="@string/reminder_sound_setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font_size" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.example.chen.list_settings.view.SwitchButton
+                android:id="@+id/switchWifi"
+                style="@style/SwitchButtonStyle"
+                android:layout_alignLeft="@+id/bg_checkbox_1"
+                android:layout_alignStart="@+id/bg_checkbox_1"
+                android:layout_centerVertical="true"
+                android:focusable="true"
+                android:layout_marginRight="20dp"
+                android:nextFocusLeft="@+id/settings_menu" />
+
+
+            <ImageView
+                android:id="@+id/bg_checkbox_1"
+                android:layout_width="130dp"
+                android:layout_height="58dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_checkbox"
+                android:visibility="invisible"
+                android:layout_alignBottom="@+id/switchWifi" />
+
+            <ImageButton
+
+                android:id="@+id/updateButton"
+                style="@style/updateButton"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                app:srcCompat="@drawable/main_menu_check_version" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="65dp"
+                android:layout_height="58dp"
+                android:id="@+id/updateProgress"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <!-- 显示设置 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_margin"
+        android:layout_marginRight="@dimen/fragment_margin"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/grey"
+            />
+
+        <ListView
+            android:id="@+id/listWifi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

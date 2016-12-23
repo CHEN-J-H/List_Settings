@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 声音设置 -->
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="30dp"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal">
+	    
+	    <LinearLayout
+	        android:layout_width="@dimen/fragment_margin"
+	        android:layout_height="wrap_content" 
+	        android:layout_gravity="center_vertical" 
+	        >
+	        <ImageView
+	        	android:layout_width="match_parent"
+	        	android:layout_height="1dp"
+	        	android:background="@color/grey"
+	        	android:contentDescription="@null"
+	        	android:layout_gravity="center_vertical" 
+	        	android:layout_marginRight="10dp"/>
+	    </LinearLayout>
+	    
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/sound_setting"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginRight="10dp"
+	        android:textColor="@color/grey"
+	        android:textSize="@dimen/middle_font_size" />
+	
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_gravity="center_vertical"
+	        android:background="@color/grey"
+	        android:contentDescription="@null"
+	        android:layout_marginRight="@dimen/fragment_margin"/>
+	</LinearLayout>
+
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_margin"
+        android:layout_marginRight="@dimen/fragment_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/reminder_sound_setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font_size" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+               <ImageView
+                android:id="@+id/bg_checkbox_1"
+                android:layout_width="87dp"
+                android:layout_height="58dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:visibility="invisible"
+                android:background="@drawable/bg_checkbox"/>
+
+			<com.example.chen.list_settings.view.SwitchButton
+                android:id="@+id/reminder_sound_switch"
+                style="@style/SwitchButtonStyle"
+                android:focusable="true"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:nextFocusLeft="@+id/settings_menu"/>
+           </RelativeLayout>
+    </LinearLayout>
+
+	<ImageView
+        android:id="@+id/line_between_vv"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/fragment_margin"
+        android:layout_marginRight="@dimen/fragment_margin"
+        android:background="@color/list_divider"
+        android:contentDescription="@null"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/layout_seekbar_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_margin"
+        android:layout_marginRight="@dimen/fragment_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:src="@drawable/volum_l" />
+
+        <SeekBar
+            android:id="@+id/volume"
+            style="@style/progressbar_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.0"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:max="100"
+            android:progress="30"
+            android:minWidth="4dp"
+            android:maxHeight="4dp"
+            android:thumbOffset="0dp" />
+        <!-- android:thumb="@drawable/icon_focus" -->
+        
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:src="@drawable/volum_h" />
+    </LinearLayout>
+
+
+    <!-- 显示设置 -->
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="30dp"
+	    android:layout_marginTop="40dp"
+	    android:orientation="horizontal">
+	    
+	    <LinearLayout
+	        android:layout_width="@dimen/fragment_margin"
+	        android:layout_height="wrap_content" 
+	        android:layout_gravity="center_vertical" 
+	        >
+	        <ImageView
+	        	android:layout_width="match_parent"
+	        	android:layout_height="1dp"
+	        	android:background="@color/grey"
+	        	android:contentDescription="@null"
+	        	android:layout_gravity="center_vertical" 
+	        	android:layout_marginRight="10dp"/>
+	    </LinearLayout>
+	    
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/display_setting"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginRight="10dp"
+	        android:textColor="@color/grey"
+	        android:textSize="@dimen/middle_font_size" />
+	
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_gravity="center_vertical"
+	        android:background="@color/grey"
+	        android:contentDescription="@null"
+	        android:layout_marginRight="@dimen/fragment_margin"/>
+	</LinearLayout>
+	
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_margin"
+        android:layout_marginRight="@dimen/fragment_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/display_auto_setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font_size" />
+
+           <RelativeLayout 
+	        android:layout_width="wrap_content"
+        	android:layout_height="wrap_content">
+            
+           	<ImageView 
+	            android:id="@+id/bg_checkbox_2"
+	            android:layout_width="87dp"
+	            android:layout_height="58dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="7dp"
+	            android:visibility="invisible"
+	            android:background="@drawable/bg_checkbox"/>
+           
+            <com.example.chen.list_settings.view.SwitchButton
+                android:id="@+id/diaplay_auto_switch"
+                style="@style/SwitchButtonStyle" 
+                android:focusable="true"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:nextFocusLeft="@+id/settings_menu"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/fragment_margin"
+        android:layout_marginRight="@dimen/fragment_margin"
+        android:background="@color/list_divider"
+        android:contentDescription="@null"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/layout_seekbar_brightness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/fragment_margin"
+        android:layout_marginRight="@dimen/fragment_margin"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:src="@drawable/brightness_l" />
+
+        <SeekBar
+            android:id="@+id/brightness"
+            style="@style/progressbar_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.0"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:max="255"
+            android:minWidth="4dp"
+            android:maxHeight="4dp"
+            android:thumbOffset="0dp"/>
+        <!-- android:thumb="@drawable/dot_seekbar" -->
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:src="@drawable/brightness_h" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line_brightness"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/fragment_margin"
+        android:layout_marginRight="@dimen/fragment_margin"
+        android:background="@color/list_divider"
+        android:contentDescription="@null"
+        android:gravity="center"/>
+
+</LinearLayout>
